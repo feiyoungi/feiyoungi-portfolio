@@ -136,6 +136,9 @@ a.project-card {
 .project-image {
     height: 200px; 
     overflow: hidden; 
+    position: relative; 
+    width: 100%;
+    padding-top: 60%; 
 }
 
 .project-image img {
@@ -143,6 +146,9 @@ a.project-card {
     height: 100%;
     object-fit: cover; /* Ensures the image fills the container without distortion */
     display: block; /* Removes inline space below images */
+    position: absolute;
+    top: 0;
+    left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
