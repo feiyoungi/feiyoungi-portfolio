@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover and Click</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .image-container img:hover {
+            content: attr(data-hover-src);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="assets/adobe-projs.png" 
+             data-hover-src="assets/bw1.png" 
+             onclick="navigateTo('https://example.com/page1')" 
+             alt="Image 1">
+
+        <img src="assets/bw2.png" 
+             data-hover-src="image2-hover.jpg" 
+             onclick="navigateTo('https://example.com/page2')" 
+             alt="Image 2">
+
+        <img src="image3.jpg" 
+             data-hover-src="image3-hover.jpg" 
+             onclick="navigateTo('https://example.com/page3')" 
+             alt="Image 3">
+    </div>
+
+    <script>
+        // JavaScript to dynamically update the image source on hover
+        document.querySelectorAll('.image-container img').forEach(image => {
+            image.addEventListener('mouseover', function() {
+                this.dataset.originalSrc = this.src;
+                this.src = this.getAttribute('data-hover-src');
+            });
+
+            image.addEventListener('mouseout', function() {
+                this.src = this.dataset.originalSrc;
+            });
+        });
+
+        // JavaScript function for navigation
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

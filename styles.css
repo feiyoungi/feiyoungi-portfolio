@@ -1,11 +1,7 @@
 :root {
-    /* --light-gray: #3a4e5f16; */
     --light-gray: #869ffb1a;
     --medium-blue: #5b4f7c;
-    /* --medium-blue: #3A4E5F; */
-    /* --light-blue: #587690; */
     --light-blue: #aa75b9;
-    /* --dark-blue: #01326b; */
     --dark-blue: #443a5f; 
     --white: #f7f6fb;
 }
@@ -20,6 +16,10 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: var(--white);
+}
+
+h1 {
+    text-align: center;
 }
 
 .title-text {
@@ -79,10 +79,15 @@ body {
 }
 
 .intro-img img {
-    width: 100%; 
-    max-width: 200px; 
+    width: 100%;
+    max-width: 200px;
     height: auto;
-    border-radius: 50%;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 1; /* Default state is fully visible */
+}
+
+.intro-img img:hover {
+    content: url('assets/fei-heart-min.jpg');
 }
 
 .span {
@@ -112,7 +117,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
 }
+
+.project-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}v
 
 .projects-grid a {
     text-decoration: none; 
@@ -246,6 +258,14 @@ video {
     margin: 0 auto; 
 }
 
+.container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding-left:15%;
+    padding-right: 20%;
+    padding-top: 20px;
+  }
+
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
     display: none;
@@ -272,7 +292,7 @@ video {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 941px) {
     .projects-grid {
         grid-template-columns: 1fr; /* Stack projects in a single column on smaller screens */
     }

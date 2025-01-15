@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="casestudy.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>PHP Website: Pocket Recipes</title>
+    </head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="work.html">Work</a>
+    <a href="play.html">Play</a>
+    <a href="about-me.html">About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+    <div class="title-text">
+        <h1>PHP Website: Pocket Recipes</h1>
+        <h2>Web Development / UX/UI Design</h2>
+    </div>
+
+        <div class="container">
+            <section class="overview">
+                <h1>The Overview</h1>
+                <div class="case-study">
+                    <button onclick="window.open('https://digmstudents.westphal.drexel.edu/~jy585/index.php', '_blank');">
+                        <strong>View Project!</strong>
+                    </button>                    
+                </div>
+                <p><strong>Date:</strong> Sept. 2024 - Dec. 2024</p>
+                <p><strong>Role:</strong> Web developer (front and back end) / UX/UI Designer, Responsive Website/App Designer</p>
+                <p><strong>Languages:</strong> PHP, HTML, CSS, MySQL, and phpMyAdmin</p>
+                <p><strong>Tools:</strong> GitHub, VSCode, MAMP, and Figma</p>
+                <hr>
+                <p><strong>Pocket Recipes</strong> was a project created for my <strong>Scripting for Interactive Digital Media</strong> course. The primary objective of this project was to design and develop a cooking recipe website using <strong>HTML, CSS, and PHP</strong>. This project helped me understand how PHP can be used to streamline web development by minimizing the number of HTML pages that I needed to create. With PHP, I could dynamically pull information from a <strong>MySQL</strong> database and display it on the site, making the website more efficient and scalable.</p>
+                <p><strong>Key features of my website included:</strong></p>
+                <ul>
+                    <li>Responsive design for small, medium, and larger screens</li>
+                    <li>Interactive user interface with dynamic content</li>
+                    <li>Search bar functionality for easy recipe lookup</li>
+                    <li>Filtering options for different cuisine types</li>
+                    <li>Integration with a MySQL database for data storage</li>
+                </ul>
+                <p><strong>The project involved:</strong></p>
+                <ul>
+                    <li>Designing the layout of the website to ensure it was user-friendly and visually appealing</li>
+                    <li>Organizing recipe data in phpMyAdmin, a MySQL database management tool</li>
+                    <li>Coding the entire project in VSCode, integrating front-end and back-end components seamlessly</li>
+                </ul>
+            </section>
+    
+            <section class="context-challenge">
+                <h1>Context and Challenge</h1>
+                <h2>Background</h2>
+                <p>This was an independent project assigned as a practical exercise to deepen our understanding of how server-side scripting (PHP) works in tandem with client-side technologies. It also introduced us to database management concepts through phpMyAdmin.</p>
+                <h2>Timeline</h2>
+                <img src="assets/timeline-min.jpg" alt="Timeline">
+                <p>Over the course of 10 weeks, the project was divided in four stages:</p>
+                <ul>
+                    <li><strong>Alpha:</strong> Incorporation of HTML and CSS </li>
+                    <li><strong>Beta:</strong> Incorporation of PHP with MySQL and phpMyAdmin</li>
+                    <li><strong>Case-Study:</strong> Storytelling and Presentation</li>
+                    <li><strong>Final:</strong> Polished Website</li>
+                </ul>
+                <h2>Challenge</h2>
+                <p>The challenge was to find a way to dynamically generate pages and manage recipe data without manual duplication as well as to provide a user interface for browsing, searching, and filtering recipes. All pages must be responsive.</p>
+                <h2>Goals and Objectives</h2>
+                <ul>
+                    <li>Implement a dynamic content system using PHP and MySQL</li>
+                    <li>Create an intuitive user interface that enhances the user experience</li>            
+                    <li>Develop functional features like search and filtering to cater to diverse user needs</li>
+                </ul>
+            </section>
+    
+            <section class="process-insight">
+                <h1>Process and Insight</h1>
+                <p>Below are some screenshots of how the design changed from the Alpha to the Beta and to the Final. Images are listed in that order.</p>
+                <h2>Home Page</h2>
+                <ul>
+                    <li><p><strong>Alpha:</strong> The home screen used a two-column grid layout with the protein filter and recipe section. The recipe cards were displayed in a grid, and the number of columns reduced as the screen size shrank.</p></li>
+                    <li><p><strong>Beta:</strong> The layout shifted from a grid to using flexbox, which simplified the responsive design and reduced reliance on media queries. The protein filter was moved to the top to minimize negative space. Recipe cards wrapped around using flexbox as the screen got smaller.</p></li>
+                    <li><p><strong>Final:</strong> The layout remained the same as the beta version. The only significant change was to the CSS, which altered the style of the protein filter.</p></li>
+                </ul>
+                <p>Overall, the transition to flexbox made the layout more flexible and easier to manage across different screen sizes, while the main structural changes involved the repositioning of the filter and refinements to the filter’s style.</p>
+                <img src="assets/alpha-home-min.jpg" alt="Alpha"><hr>
+                <img src="assets/beta-home-min.jpg" alt="Beta"><hr>
+                <img src="assets/final-home-min.jpg" alt="Final">
+                <h2>Detail Page</h2>
+                <ul>
+                    <li><p><strong>Alpha:</strong> The detail page displayed content in two columns: one side for the image and the other for the text. The steps for the recipe were also shown in two columns, which switched to a single column as the screen size shrank.</p></li>
+                    <li><p><strong>Beta:</strong> The structure of the detail page remained the same as in the alpha version, with the same two-column layout. However, there were some CSS changes to improve styling, though the overall format stayed consistent.</p></li>
+                    <li><p><strong>Final:</strong> The detail page format remained unchanged from the beta version, with no significant structural modifications. The only update was further refinement of the CSS.</p></li>
+                </ul>
+                <p>The overall design of the detail page remained largely consistent, with changes primarily focused on styling adjustments rather than structural updates.</p>
+                <img src="assets/alpha-detail-min.jpg" alt="Alpha"><hr>
+                <img src="assets/beta-detail-min.jpg" alt="Beta">
+                <h2>Help Page</h2>
+                <ul>
+                    <li><p><strong>Alpha:</strong> The help section was simple, with a text-heavy layout and minimal visuals. It was built using basic HTML and CSS.</p></li>
+                    <li><p><strong>Beta:</strong> The help section remained unchanged in structure but received a color scheme update for a fresh look. The content layout stayed text-based without significant modifications.</p></li>
+                    <li><p><strong>Final:</strong> The help section received additional styling by introducing a container for the information, which improved the organization and presentation of the text.</p></li>
+                </ul>
+                <p>Overall, the changes to the help section focused on enhancing its visual appeal and structure through the introduction of color and layout refinements. The content remained primarily text-based throughout.</p>
+                <img src="assets/alpha-help-min.jpg" alt="Alpha"><hr>
+                <img src="assets/beta-help-min.jpg" alt="Beta"><hr>
+                <img src="assets/final-help-min.jpg" alt="Final">
+                <h2>Search Results and Error Page</h2>
+                <ul>
+                    <li><p><strong>Alpha:</strong> The search bar was pill-shaped, allowing users to type words or letters to get results. If a user typed something that wasn’t in the system, an error message appeared to the right of the search bar, and the recipe cards disappeared.</p></li>
+                    <li><p><strong>Beta:</strong> The search bar's shape was changed to a square to experiment with a different look. The functionality remained the same, but with the integration of MySQL and PHP, the search could now filter not just by dish names but also by ingredients. If there were no matches, an error message would still appear, and the recipe cards would disappear.</p></li>
+                    <li><p><strong>Final:</strong> The search bar returned to its original pill shape, maintaining the functionality from the beta version. The error message stayed the same, but to address the negative space, a photo was added alongside the error message.</p></li>
+                </ul>
+                <p>In summary, the search and error section underwent a change in the appearance of the search bar, shifting back and forth between pill and square shapes, while the functionality remained consistent. The error message layout was refined with the addition of a photo to improve visual balance.</p>
+                <img src="assets/alpha-error-min.jpg" alt="Alpha"><hr>
+                <img src="assets/beta-error-min.jpg" alt="Beta"><hr>
+                <img src="assets/final-error-min.jpg" alt="Final">
+            </section>
+    
+            <section class="results">
+                <h1>The Results</h1>
+                <p>Throughout the course of this project, I gained valuable experience in database integration and PHP. I’m pleased with the outcome and feel that I accomplished the goals I set. The alpha phase provided a solid foundation, allowing me to get started, while the beta phase pushed me to develop as much as possible for a minimum viable product.</p>
+            </section>
+        </div>
+
+<footer>
+    <h3>Let's Connect!</h3>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/feiyoung/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:jy585@drexel.edu" target="_blank" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://github.com/feiyoungi" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
