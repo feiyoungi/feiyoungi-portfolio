@@ -90,6 +90,20 @@ h1 {
     content: url('assets/fei-heart-min.jpg');
 }
 
+.selfie-img {
+    display: flex;
+    justify-content: center; 
+}
+
+.selfie-img img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+    opacity: 1; /* Default state is fully visible */
+    border-radius: 30px;
+}
+
 .span {
     font-family: 'Pixelify Sans';
 }
@@ -265,6 +279,21 @@ video {
     padding-right: 20%;
     padding-top: 20px;
   }
+
+  .download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: var(--dark-blue); /* Green */
+    border: 3px solid var(--dark-blue);
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Poppins;
+    margin-bottom: 20px; /* Adds spacing below the button */
+}
 
 @media screen and (max-width: 768px) {
     .topnav a:not(:first-child) {
