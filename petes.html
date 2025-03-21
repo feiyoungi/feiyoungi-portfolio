@@ -55,6 +55,7 @@
             <p>Pete’s Little Lunchbox is a breakfast and lunch food truck located at 33rd and Arch Street, serving a variety of meals to Drexel students and local workers.</p>
             <p>Before starting this project, some team members were already familiar with Pete’s strong reputation in the community, as well as its lack of advertising and branding. This presented an exciting opportunity to design and develop a takeout app that captured the comfort and practicality of its quick, on-the-go service.</p>
             <h2>The Team: BeepBop</h2>
+            <img src="assets/petes-team.jpg" alt="beepbop team">
             <ul>
                 <li>Fei Young – Designer and Frontend Developer</li>
                 <li>Maple Tieu – Designer and Data Architect</li>
@@ -68,13 +69,7 @@
             <!-- <img src="assets/timeline-min.jpg" alt="Timeline"> -->
             <p>This project occurred over 10 weeks and was broken into 5 phases.</p>
             <p><strong>Phases:</strong></p>
-            <ul>
-                <li>Mid-Fidelity</li>
-                <li>High-Fidelity</li>
-                <li>Alpha</li>
-                <li>Beta</li>
-                <li>Final</li>
-            </ul>
+            <img src="assets/petes-timeline.jpg" alt="timeline">
             <h2>Challenge</h2>
             <p>Although Pete’s menu appeared extensive, its length was an illusion—many customization options were displayed at a glance, making it feel overwhelming despite its simplicity. Our challenge was to streamline the menu (through both design and development) while preserving its variety and ease of customization.</p>
             <p>Additionally, Pete’s had no social media presence or branding beyond the truck’s red, white, and black color scheme. This gave us creative freedom while establishing red as the dominant color in our design. Red became both a challenge and an asset—its boldness created a strong visual identity but required careful application to maintain balance and usability. In the end, it became a defining element of Pete’s brand, enhancing both recognition and user experience.</p>
@@ -97,20 +92,85 @@
         <section class="process-insight">
             <h1>PROCESS AND INSIGHT</h1>
             <h2>Mid-Fidelity</h2>
+            <p>Since this project evolved from a previous design project, our first task was to review the original app and refine its structure, design, and flow. Our primary focus at this stage was functionality and navigation. We removed unnecessary pages, introduced new elements, and adjusted the app flow to enhance the user experience before testing.</p>
+            <p>Some major changes included:</p>
+            <ul>
+                <li>Color Palette: We redefined the color scheme for greater vibrancy and carefully reconsidered the hierarchy of primary, secondary, and tertiary colors.</li>
+                <li>Logo: We scrapped the original logo in favor of a new mascot, designed by Maple, to enhance branding and establish a fun, playful identity.</li>
+                <li>Buttons: To maintain consistency, we limited button styles to two main variations—primary and secondary.</li>
+            </ul>
+            <p>To validate our design choices, our team, including myself, conducted an initial round of user testing. The results of the user testing is seen in the Mid-Fidelity design.</p>
+            <img src="/assets/petes-midfid.jpg" alt="mid fidelity petes">
             <h2>High-Fidelity</h2>
+            <p>After establishing core functionality and implementing the main design in mid-fidelity, this phase focused heavily on refining and adding details to the design. We cleaned up the stylesheet, incorporated Figma variables for consistent text sizing and weight, and established a spacing guide to improve visual hierarchy. This stylesheet was then transferred over into code, as we incorporated variables for color and font-size for header HTML element.</p>
+            <img src="/assets/petes-stylesheet.jpg" alt="petes stylesheet">
+            <img src="/assets/petes-variables.jpg" alt="petes variables">
+            <p>One major change involved rethinking the login/signup flow. Initially, users were required to sign up before checkout, but user testing revealed frustration with this forced step. Based on feedback, we adjusted this interaction in later iterations.</p>
+            <p>Additional design refinements based on user testing included:</p>
+            <ul>
+                <li>Menu: Removed the “Build-Your-Own-Sandwich” option; instead, all menu items open detail pages for customization.</li>
+                <li>Mascot: Increased its presence to strengthen branding.</li>
+                <li>Carousel: Replaced with a static image of the food truck for clarity.</li>
+                <li>Filters: Updated category names to be more specific to food types.</li>
+                <li>CTA: Added a clear Call-to-Action button to encourage ordering.</li>
+                <li>Map: Enhanced the map with a pop-out (magnified) view for better visibility.</li>
+                <li>Rewards: Removed from the main flow to declutter the experience.</li>
+            </ul>
+            <p>On the development side, we established the SQL database, transferring menu data via a spreadsheet through phpMyAdmin. Accessibility was also a priority—we ensured text sizes and colors were readable and intuitive for all users.</p>
             <h2>Alpha</h2>
+            <p>The Alpha phase marked the transition from design to development. As the frontend developer, I built static screens using HTML, CSS, and JavaScript, enabling users to navigate the app’s core flow without backend functionality. To ensure pixel-perfect accuracy, I utilized Figma’s developer mode and worked locally to see real-time updates.</p>
+            <img src="assets/petes-dev-mode.jpg" alt="petes dev mode">
+            <p>A key deliverable at this stage was our first iteration of the checkout animation. However, user feedback highlighted several issues—it felt too plain, too slow, and lacked clarity in its transition. These insights drove significant improvements in later iterations.</p>
             <h2>Beta</h2>
+            <p>In the Beta phase, we focused on refining microinteractions, including:</p>
+            <ul>
+                <li>Top filter bar</li>
+                <li>Bottom navigation bar</li>
+                <li>Standard CTA buttons</li>
+                <li>Heart button (for favoriting items)</li>
+                <li>Item counter button</li>
+                <li>Radio buttons</li>
+                <li>Checkboxes</li>
+            </ul>
+            <p>To keep our codebase organized, each microinteraction was first developed in CodePen before being transferred to VS Code. This approach minimized clutter and streamlined our workflow. Additionally, we structured all reusable elements within a components folder, allowing for dynamic PHP integration and reducing redundancy. While PHP integration began at this stage, the full database connection was completed in the final version.</p>
+            <p>We also made key UX adjustments based on earlier feedback:</p>
+            <ul>
+                <li>Login/Sign-Up: Introduced a guest checkout flow instead of requiring sign-up before checkout, significantly improving the experience.</li>
+                <li>Animation: Added text and borders for better consistency and navigation clarity. However, user testing revealed frustration with seeing the animation repeatedly when ordering multiple items, leading to further refinements.</li>
+            </ul>
             <h2>Final</h2>
+            <p>The final phase focused on code cleanup, bug fixes, and full PHP/database integration, ensuring a seamless user experience. This version enabled users to:</p>
+            <ul>
+                <li>Add multiple items to their bag.</li>
+                <li>Edit or delete items from their order.</li>
+                <li>See live subtotal updates as they modified their selections.</li>
+            </ul>
+            <p>With the backend developer finalizing database connections, we optimized CSS, resolved minor usability issues, and ensured a polished, fully functional app.</p>
+            <p>For reference, here are the main screen progressions showcasing our development journey!</p>
+            <img src="/assets/petes-prog-home.png" alt="petes home progression">
+            <img src="/assets/petes-prog-item-detail.jpg" alt="petes item detail progression">
+            <img src="/assets/petes-prog-reciept.png" alt="petes receipt progression">
         </section>
 
         <section class="results">
             <h1>THE SOLUTION</h1>
-            <p>blah</p>
+            <div class="case-study">
+                <button onclick="window.open('https://digmstudents.westphal.drexel.edu/~yl3434/beepbop/final/login-signup.php', '_blank');">
+                    <strong>View Project!</strong>
+                </button>                    
+            </div>
+            <p>To address Pete’s overwhelming yet deceptively simple menu, we streamlined its presentation by grouping customization options more intuitively and introducing a cleaner visual hierarchy through an item detail page. This allowed users to navigate their choices with ease while maintaining the flexibility that defined Pete’s menu.</p>
+            <p>We implemented a MySQL database to structure the menu efficiently. The database stored all menu items along with separate categories for customizations. When a user clicked on a menu item, the system retrieved its unique menu item ID and dynamically displayed the corresponding customization options. This approach reduced visual clutter on the main menu while preserving the depth of customization Pete’s customers valued.</p>    
+            <p>For branding, we established a cohesive visual identity by leveraging Pete’s existing red, white, and black color scheme. Red became the focal point, used strategically to draw attention to key elements while avoiding visual fatigue. Through thoughtful design and development, we transformed Pete’s digital presence—creating a user-friendly menu experience and a bold, recognizable brand that extended beyond the truck itself.
+            </p>          
         </section>
 
         <section class="results">
             <h1>THE RESULTS</h1>
-            <p>blah</p>
+            <p>This project challenged me in multiple ways. As someone who is more design-focused, I wanted to push myself by taking on a coding role. Balancing my responsibilities as a primary designer with the heavy workload of front-end development was demanding, but it gave me valuable insight into the transition from design to code.</p>
+            <p>Through this experience, I learned how to efficiently translate design decisions into pixel-perfect code by leveraging variables and a clear design system. This approach eliminated the need to manually double-check text sizes and hierarchies, as they were already predefined. Additionally, I deepened my understanding of PHP, using it to restructure code for better reusability. By implementing PHP components, I significantly reduced redundancy, saving time and effort compared to copying and pasting code across multiple pages.</p>
+            <p>One of the biggest challenges was managing the sheer number of files and CSS styles, which quickly became overwhelming. This taught me the importance of organization from the start to prevent the project from spiraling out of proportion.</p>
+            <p>Lastly, although I wasn’t the project manager, this experience strengthened my project management skills. I learned how to efficiently schedule meetings, navigate collaborative challenges, and find solutions that balanced different opinions and work styles.</p>
         </section>
     </div>
 
